@@ -24,6 +24,8 @@ html{
 
 
 body{
+    margin: 0;
+    padding: 0;
     background: var(--bg-color);
     color: var(--text-color);
     justify-content: center;
@@ -136,6 +138,8 @@ ul li a{
 .hamburger{
     display: none;
     cursor: pointer;
+    display: flex;
+    position: absolute;
 }
 
 .bar{
@@ -154,10 +158,10 @@ ul li a{
 }
 
 @media(max-width:1024px){
-    .hamburger{
+    .hamburger {
         display: block;
         margin-right: -2rem;
-    }
+    }    
 
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -497,6 +501,7 @@ span{
         padding-right: 2rem;
         position: relative;
     }
+    
 
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -768,44 +773,6 @@ span{
     }
 /* End Project */
 
-/* Footer Section */
-/* footer{
-    background: var(--second-bg-color);
-    color: var(--text-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: wrap;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    
-}
-
-.footer-text p{
-    font-size: 1.8rem;
-}
-
-.footer-iconTop a {
-    color: var(--text-color);
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem;
-    background: #0ef;
-    border-radius: .8rem;
-    transition: .5s ease;
-    text-decoration: none;
-}
-
-.footer-iconTop a:hover{
-    box-shadow: 0 0 1rem var(--main-color);
-}
-
-.footer-iconTop a i{
-    font-size: 2.4rem;
-    color: var(--second-bg-color); 
-}*/
-
-/* End Footer */
 
 /* Media Query */
 @media (max-width: 1200px){
