@@ -1,3 +1,4 @@
+/* NavBar */
 const hamburger = document.querySelector(".hamburger");
 const navmenu = document.querySelector(".nav-menu");
 
@@ -11,3 +12,14 @@ document.querySelectorAll(".nav-link").forEach(n =>
         hamburger.classList.remove("active");
         navmenu.classList.remove("active");
     }))
+
+/*Scroll Reveal*/
+ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading, .', { origin: 'top' });
+ScrollReveal().reveal('.box-1, .', { origin: 'left' });
