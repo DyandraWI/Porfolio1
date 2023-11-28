@@ -23,6 +23,22 @@
      <!-- box icons cuy -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- Swipper CDN CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <style>
+        .swiper-button-next,
+        .swiper-button-prev{
+            color: rgb(255, 48, 255);
+        }
+    
+        .button link a {
+            color: #000;
+        }
+    
+        
+    </style>
+
 </head>
 <body>
     <header>
@@ -154,8 +170,97 @@
           </section>
             </section>
         
+        <!-- Project Section -->
+        <section class="project" id="project">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <p>My Project that i have done in the Semester 1</p>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+                
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/Mini_Ecommerce.png" alt="">
+                        </div>
+                        <div class="name-project">
+                            <a class="name" href="https://dyandrawi.github.io/Tugas_Bootstrap">Mini E-commerce</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/Form_login.png" alt="">
+                        </div>
+                        <div class="name-project">
+                            <a class="name" href="https://dyandrawi.github.io/Tugas_PWB-Form/">Form Login</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/Simple_Bootstrap.png" alt="">
+                        </div>
+    
+                        <div class="name-project">
+                            <a class="name" href="https://dyandrawi.github.io/Tugas_PakJum2/">Simple Bootstrap</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/Tabel_absen.png" alt="">
+                        </div>
+                        <div class="name-project">
+                            <a class="name" href="https://dyandrawi.github.io/Tabel_HTML/">Tabel Absen HTML</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
 
-    <script src="script.js"></script>
+            <script src="script.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3, // Set slidesPerView to 3 for desktop
+                    spaceBetween: 40,
+                    slidesPerGroup: 1,
+                    loop: true,
+                    grabCursor: true,
+                    loopFillGroupWithBlank: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev"
+                    },
+                });
+        
+                // Atur ulang slidesPerView saat layar berubah ukuran
+                window.addEventListener('resize', function () {
+                    swiper.params.slidesPerView = getSlidesPerView();
+                    swiper.update();
+                });
+        
+                // Fungsi untuk mendapatkan jumlah slides per view sesuai dengan lebar layar
+                function getSlidesPerView() {
+                    if (window.innerWidth > 768) {
+                        return 3;
+                    
+                    } else {
+                        return 1;
+                    }
+                }
+            </script>
+    <!-- CDN Swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- CDN Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
