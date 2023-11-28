@@ -22,4 +22,3 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading, .', { origin: 'top' });
-ScrollReveal().reveal('.box-1, .', { origin: 'left' });

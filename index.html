@@ -136,7 +136,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="box-1 col-12 col-sm-6 col-xl-5">
+                <div class="box-2 col-12 col-sm-6 col-xl-5">
                     <div class="rounded shadow-sm p-3 p-md-4 p-xxl-5" style="background-color: #323946;">
                     <h3 class="fw-bold mb-2" style="color: rgb(255, 48, 255); font-size: 3rem;">JavaScript</h3>
                     <p class="fst-italic mb-4 text-light" style="font-size: 12px;">JavaScript is a programming language that allows you to create dynamic and interactive web pages.</p>
@@ -145,7 +145,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="box-2 col-12 col-sm-6 col-xl-5">
+                <div class="box-1 col-12 col-sm-6 col-xl-5">
                     <div class="rounded shadow-sm p-3 p-md-4 p-xxl-5" style="background-color: #323946;">
                         <h3 class="fw-bold mb-2" style="color: rgb(255, 48, 255); font-size: 3rem;">HTML</h3>
                     <p class="fst-italic mb-4 text-light" style="font-size: 12px;">HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
@@ -170,9 +170,9 @@
         
         <!-- Project Section -->
         <section class="project" id="project">
-        <h2 class="heading">Latest <span>Project</span></h2>
-        <p>My Project that i have done in the Semester 1</p>
-        <div class="swiper mySwiper container">
+            <h2 class="heading">Latest <span>Project</span></h2>
+            <p>My Project that i have done in the Semester 1</p>
+            <div class="swiper mySwiper container">
             <div class="swiper-wrapper content">
                 
                 <div class="swiper-slide card">
@@ -220,6 +220,17 @@
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+            </section>
+            
+            <footer class="footer">
+                <div class="footer-text">
+                    <p>Copyright &copy; 2023 by Dyandra | All Right Rserved </p>
+                </div>
+        
+                <div class="footer-iconTop">
+                    <a href="#home"><i class='bx bx-chevrons-up'></i></a>
+                </div>
+            </footer>
 
             <script src="script.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -271,6 +282,11 @@
     });
     
     ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+    ScrollReveal().reveal('.about-img', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+    ScrollReveal().reveal('.home-content h2', { origin: 'right' });
+    ScrollReveal().reveal('.box-1', { origin: 'left' });
+    ScrollReveal().reveal('.box-2', { origin: 'right' });
     </script>
     <!-- End Scroll -->
 
