@@ -76,7 +76,7 @@
         <div class="home-content">
             <h3>Yo! Mandem and Gyaldem, my name is..</h3>
             <h1>Dyandra Wahyu Islamy</h1>
-            <h2>And I'm a <span>Human</span></h2>
+            <h2>And I'm a <span class="multiple-text"></span></h2>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-instagram'></i></a>
                 <a href="#"><i class='bx bxl-youtube'></i></a>
@@ -86,7 +86,10 @@
         </div>
 
         <!-- Images Home -->
-        <div class="home-img">
+        <div class="card-home">
+            <img src="images/Andra-space-removebg-preview.png" alt="">
+        </div>
+        <!-- <div class="home-img">
             <div class="glowing-circle">
               <span></span>
               <span></span>
@@ -96,7 +99,7 @@
             </div>
           </div>
 
-          <div class="header-right"></div>
+          <div class="header-right"></div> -->
 
     </section>
 
@@ -222,7 +225,89 @@
             <div class="swiper-button-prev"></div>
             </section>
             
-            
+            <!-- Footer Section -->
+    <!-- <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Dyandra | All Right Rserved </p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-chevrons-up'></i></a>
+        </div>
+    </footer> -->
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+  
+        <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #3f51b5">
+    <!-- Grid container -->
+  
+      <!-- Section: Links -->
+     
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5" style="text-decoration;">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Home</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">About</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Skill</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Project</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Social -->
+      <div style="margin-bottom: 5rem;">
+          <a href="" class="text-white me-4">
+            <i class='bx bxl-instagram'></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class='bx bxl-youtube'></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <href="#"><i class='bx bxl-github'></i>
+          </a>
+      </div>
+      <!-- Section: Social -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+<!-- End of .container -->
 
             <script src="script.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -281,6 +366,19 @@
     ScrollReveal().reveal('.box-2', { origin: 'right' });
     </script>
     <!-- End Scroll -->
+
+    <!-- Typed JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed('.multiple-text', {
+            strings: ["Human.", "Student.", "Demon King."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+    <!-- End Typed JS -->
 
     <!-- CDN Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
